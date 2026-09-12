@@ -1,6 +1,6 @@
 # NAS Distant — CasaOS, Wake-on-LAN & Tailscale
 
-<img width="1235" height="691" alt="NAS Distant" src="https://github.com/user-attachments/assets/252b6313-dc7c-42c2-bbf1-7b634af0235c" />
+<img width="1039" height="579" alt="NAS Distant Schéma" src="https://github.com/user-attachments/assets/65e41944-e35e-49cc-97b2-a85b06746448" />
 
 > Un Acer Gateway DT55 sous Debian 13 (sans interface graphique), transformé en NAS accessible depuis n'importe où grâce à Tailscale, tout en restant éteint la majeure partie du temps (pour réduire la consommation électrique de ce PC) : il est réveillé à la demande via Wake-on-LAN, déclenché à distance depuis un HP EliteDesk sous Proxmox connecté au même tailnet.
 
