@@ -2,7 +2,7 @@
 
 <img width="1219" height="686" alt="Capture d&#39;écran 2026-08-02 175725" src="https://github.com/user-attachments/assets/6e7e3bed-fe5a-4c8b-93cc-d83e48c637a4" />
 
-> Un Acer Gateway DT55 sous Debian 13 (sans interface graphique), transformé en NAS accessible depuis n'importe où grâce à Tailscale, tout en restant éteint la majeure partie du temps : il est réveillé à la demande via Wake-on-LAN, déclenché à distance depuis un HP EliteDesk sous Proxmox connecté au même tailnet.
+> Un Acer Gateway DT55 sous Debian 13 (sans interface graphique), transformé en NAS accessible depuis n'importe où grâce à Tailscale, tout en restant éteint la majeure partie du temps (pour réduire la consommation électrique de ce PC) : il est réveillé à la demande via Wake-on-LAN, déclenché à distance depuis un HP EliteDesk sous Proxmox connecté au même tailnet.
 
 ---
 
@@ -29,6 +29,7 @@ Le projet repose sur trois machines aux rôles complémentaires.
 ---
 
 ## Installation de CasaOS sur l'Acer
+<img width="1919" height="951" alt="dashboard_2,68To" src="https://github.com/user-attachments/assets/2cbbd285-d2b5-4abd-b398-5480f15eb41b" />
 
 **CasaOS** est un système d'exploitation orienté NAS avec interface web, installé par-dessus Debian pour simplifier la gestion des services et du stockage au quotidien.
 
@@ -42,6 +43,11 @@ ip a
 # Installation de CasaOS
 curl -fsSL https://get.casaos.io | sudo bash
 ```
+
+Ensuite, Debian étant installé sur 1 disque, les 2 autres étaient juste détectés par CasaOS mais pas utilisable, il a fallu les relier pour en faire 3 disques de stockage (un total de ~2.68To)
+
+Ici, on y choisit le disque :
+<img width="1919" height="947" alt="choix_disque" src="https://github.com/user-attachments/assets/c6e2602b-c8fe-4303-afc9-605a7336ea4c" />
 
 ---
 
