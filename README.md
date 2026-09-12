@@ -1,4 +1,4 @@
-# NAS Distant — CasaOS, Wake-on-LAN & Tailscale
+# NAS Distant
 
 <img width="1039" height="579" alt="NAS Distant Schéma" src="https://github.com/user-attachments/assets/65e41944-e35e-49cc-97b2-a85b06746448" />
 
