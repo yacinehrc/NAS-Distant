@@ -29,9 +29,10 @@ Le projet repose sur trois machines aux rôles complémentaires.
 ---
 
 ## Installation de CasaOS sur l'Acer
+**CasaOS** est un système d'exploitation orienté NAS avec interface web, installé par-dessus Debian pour simplifier la gestion des services et du stockage au quotidien.
+
 <img width="1919" height="951" alt="dashboard_2,68To" src="https://github.com/user-attachments/assets/2cbbd285-d2b5-4abd-b398-5480f15eb41b" />
 
-**CasaOS** est un système d'exploitation orienté NAS avec interface web, installé par-dessus Debian pour simplifier la gestion des services et du stockage au quotidien.
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -44,15 +45,17 @@ ip a
 curl -fsSL https://get.casaos.io | sudo bash
 ```
 
-Ensuite, Debian étant installé sur 1 disque, les 2 autres étaient juste détectés par CasaOS mais pas utilisable, il a fallu les relier pour en faire 3 disques de stockage (un total de ~2.68To)
+Le système d'exploitation (Debian) étant installé sur le disque principal, les deux disques secondaires nécessitaient d'être initialisés et montés pour être exploitables. Cette configuration a été réalisée via l'interface de CasaOS afin de porter la capacité totale de stockage à environ 2,68 To.
 
-Ici, on y crée un stockage :
+Création d'un nouveau volume de stockage :
 <img width="1919" height="947" alt="choix_disque" src="https://github.com/user-attachments/assets/c6e2602b-c8fe-4303-afc9-605a7336ea4c" />
 
-Puis là on choisit le nom et le disque :
+
+Sélection du disque brut, nommage et formatage :
 <img width="1919" height="946" alt="nom_formattage_disque1" src="https://github.com/user-attachments/assets/384a5de0-ae41-49c7-be4d-dc98c940863c" />
 
-Même étapes pour le dernier disque, ainsi nous avons 3 disques de stockage maintenant.
+
+L'opération est ensuite répétée pour le dernier disque, permettant ainsi d'exploiter pleinement l'architecture multi-disques du NAS.
 
 ---
 
@@ -117,7 +120,8 @@ La même procédure (`curl -fsSL https://tailscale.com/install.sh | sh` puis `ta
 
 ## Conclusion
 
-Ainsi, maintenant j'ai accès à un stockage distant tant qu'une connexion est active sur mon PC portable et que le HP Elitedesk n'est pas éteint, comme ca, j'ai un stockage et disponible sur plusieurs appareils (autres machines, téléphone, ... )
+En définitive, je dispose maintenant d'un espace de stockage distant et multi-plateforme à la demande. Sa disponibilité continue repose simplement sur l'activité de l'hyperviseur relais (HP EliteDesk) et d'une connexion à un réseau.
+
 Ce projet m'a permis :
 
 - de découvrir CasaOS comme couche de gestion NAS par-dessus Debian
