@@ -106,10 +106,10 @@ En pratique, cette commande est lancée depuis un terminal PowerShell sur le HP 
 
 **Tailscale** relie les machines en réseau privé (VPN mesh basé sur WireGuard), ce qui permet d'atteindre CasaOS et le NAS depuis n'importe où sans exposer de port sur Internet.
 
-<img width="1232" height="613" alt="tailscale flouté" src="https://github.com/user-attachments/assets/f4a76ab6-cd75-4a04-93b6-34a0c3aa6f6f" />
+## <img width="1232" height="613" alt="tailscale flouté" src="https://github.com/user-attachments/assets/f4a76ab6-cd75-4a04-93b6-34a0c3aa6f6f" />
 
 
-- Sur le **HP EliteDesk**, Tailscale est installé directement au niveau de l'hyperviseur, dans le shell PVE (en root de Proxmox).
+- Sur le **HP EliteDesk**, Tailscale est installé directement au niveau de l'hyperviseur, dans le shell PVE (en root du Proxmox).
 - Sur l'**Acer**, Tailscale est installé sur Debian, machine hôte de CasaOS.
 - Le **HP portable** sert de poste de pilotage : navigateur pour l'admin console Tailscale et l'interface CasaOS, et terminal PowerShell pour se connecter en SSH et déclencher le Wake-on-LAN.
 
