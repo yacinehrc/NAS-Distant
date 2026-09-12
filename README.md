@@ -36,6 +36,7 @@ Le projet repose sur trois machines aux rôles complémentaires.
 <img width="1919" height="951" alt="dashboard_2,68To" src="https://github.com/user-attachments/assets/2cbbd285-d2b5-4abd-b398-5480f15eb41b" />
 
 
+
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl ethtool -y
