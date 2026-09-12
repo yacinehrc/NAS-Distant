@@ -89,7 +89,7 @@ sudo systemctl enable wol.service
 sudo systemctl start wol.service
 ```
 
-Le réveil à distance s'effectue ensuite en envoyant un magic packet à l'adresse MAC de l'Acer (remplacer aa:aa:aa:aa:aa:aa par l'adresse MAC de la machine) :
+Le réveil à distance s'effectue ensuite en envoyant un magic packet à l'adresse MAC de l'Acer (*remplacer aa:aa:aa:aa:aa:aa par l'adresse MAC de la machine*) :
 
 ```bash
 wakeonlan aa:aa:aa:aa:aa:aa
