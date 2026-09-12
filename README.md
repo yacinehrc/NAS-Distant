@@ -49,7 +49,7 @@ ip a
 # Installation de CasaOS
 curl -fsSL https://get.casaos.io | sudo bash
 ```
-
+##
 Le système d'exploitation (Debian) étant installé sur le disque principal, les deux disques secondaires nécessitaient d'être initialisés et montés pour être exploitables. Cette configuration a été réalisée via l'interface de CasaOS afin de porter la capacité totale de stockage à environ 2,68 To.
 
 Création d'un nouveau volume de stockage :
@@ -59,7 +59,7 @@ Création d'un nouveau volume de stockage :
 
 Sélection du disque brut, nommage et formatage :
 
-## <img width="1919" height="946" alt="nom_formattage_disque1" src="https://github.com/user-attachments/assets/384a5de0-ae41-49c7-be4d-dc98c940863c" />
+<img width="1919" height="946" alt="nom_formattage_disque1" src="https://github.com/user-attachments/assets/384a5de0-ae41-49c7-be4d-dc98c940863c" />
 
 
 L'opération est ensuite répétée pour le dernier disque, permettant ainsi d'exploiter pleinement l'architecture multi-disques du NAS.
