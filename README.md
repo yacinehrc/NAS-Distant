@@ -46,8 +46,13 @@ curl -fsSL https://get.casaos.io | sudo bash
 
 Ensuite, Debian étant installé sur 1 disque, les 2 autres étaient juste détectés par CasaOS mais pas utilisable, il a fallu les relier pour en faire 3 disques de stockage (un total de ~2.68To)
 
-Ici, on y choisit le disque :
+Ici, on y crée un stockage :
 <img width="1919" height="947" alt="choix_disque" src="https://github.com/user-attachments/assets/c6e2602b-c8fe-4303-afc9-605a7336ea4c" />
+
+Puis là on choisit le nom et le disque :
+<img width="1919" height="946" alt="nom_formattage_disque1" src="https://github.com/user-attachments/assets/384a5de0-ae41-49c7-be4d-dc98c940863c" />
+
+Même étapes pour le dernier disque, ainsi nous avons 3 disques de stockage maintenant.
 
 ---
 
@@ -85,6 +90,7 @@ En pratique, cette commande est lancée depuis un terminal PowerShell sur le HP 
 ---
 
 ## Tailscale — VPN mesh entre les machines
+<img width="1902" height="947" alt="tailscale" src="" />
 
 **Tailscale** relie les machines en réseau privé (VPN mesh basé sur WireGuard), ce qui permet d'atteindre CasaOS et le NAS depuis n'importe où sans exposer de port sur Internet.
 
