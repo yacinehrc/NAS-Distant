@@ -89,10 +89,10 @@ sudo systemctl enable wol.service
 sudo systemctl start wol.service
 ```
 
-Le réveil à distance s'effectue ensuite en envoyant un magic packet à l'adresse MAC de l'Acer :
+Le réveil à distance s'effectue ensuite en envoyant un magic packet à l'adresse MAC de l'Acer (remplacer aa:aa:aa:aa:aa:aa par l'adresse MAC de la machine) :
 
 ```bash
-wakeonlan adresseMAC
+wakeonlan aa:aa:aa:aa:aa:aa
 ```
 
 En pratique, cette commande est lancée depuis un terminal PowerShell sur le HP portable, après connexion en SSH au shell PVE (en root de Proxmox) sur le HP EliteDesk — c'est ce qui permet de réveiller l'Acer à distance sans avoir physiquement accès au boîtier.
