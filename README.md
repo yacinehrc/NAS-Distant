@@ -1,6 +1,6 @@
 # NAS Distant — CasaOS, Wake-on-LAN & Tailscale
 
-<img width="1219" height="686" alt="Capture d&#39;écran 2026-08-02 175725" src="https://github.com/user-attachments/assets/6e7e3bed-fe5a-4c8b-93cc-d83e48c637a4" />
+<img width="1235" height="691" alt="NAS Distant" src="https://github.com/user-attachments/assets/252b6313-dc7c-42c2-bbf1-7b634af0235c" />
 
 > Un Acer Gateway DT55 sous Debian 13 (sans interface graphique), transformé en NAS accessible depuis n'importe où grâce à Tailscale, tout en restant éteint la majeure partie du temps (pour réduire la consommation électrique de ce PC) : il est réveillé à la demande via Wake-on-LAN, déclenché à distance depuis un HP EliteDesk sous Proxmox connecté au même tailnet.
 
@@ -113,12 +113,11 @@ tailscale up
 
 La même procédure (`curl -fsSL https://tailscale.com/install.sh | sh` puis `tailscale up`) est appliquée sur l'Acer, avec connexion au **même compte Tailscale** que le HP EliteDesk, afin que les deux machines apparaissent sur le même tailnet.
 
-Dans la console d'administration Tailscale, la machine correspondant à l'Acer est renommée **`NAS-Distant`** pour refléter son véritable rôle dans l'infrastructure.
-
 ---
 
 ## Conclusion
 
+Ainsi, maintenant j'ai accès à un stockage distant tant qu'une connexion est active sur mon PC portable et que le HP Elitedesk n'est pas éteint, comme ca, j'ai un stockage et disponible sur plusieurs appareils (autres machines, téléphone, ... )
 Ce projet m'a permis :
 
 - de découvrir CasaOS comme couche de gestion NAS par-dessus Debian
